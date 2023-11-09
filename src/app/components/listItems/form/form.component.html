@@ -1,0 +1,5 @@
+<form [formGroup]="transactionForm" (ngSubmit)="onSubmit()">
+    <input placeholder="Description" type="text" id="desc" formControlName="desc"/>
+    <input placeholder="Amount in Dollars" type="text" id="amt" formControlName="amt"/>
+    <button type="submit">Add</button>
+</form>

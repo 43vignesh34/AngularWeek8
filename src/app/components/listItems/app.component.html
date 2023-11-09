@@ -1,0 +1,10 @@
+<div style="text-align: center;">
+  <h3>Monthly Expense Tracker-October</h3>
+  <p>Total Income: <span style="color: green;"> ${{this.totalIncome}}</span></p>
+<p>Total Expenses: <span style="color: red;">${{ this.totalExpenses }}</span></p>
+<p>Available Balance: ${{ this.availableBalance}}</p>
+</div>
+<div class="container">
+    <app-transaction-list [transactionType]="'Income'" (change)="onIncomeChange($event)"></app-transaction-list>
+    <app-transaction-list [transactionType]="'Expense'" (change)="onExpenseChange($event)"></app-transaction-list>
+  </div> 
